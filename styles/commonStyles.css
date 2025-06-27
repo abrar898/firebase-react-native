@@ -1,0 +1,47 @@
+import { StyleSheet } from 'react-native';
+
+export const commonStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  card: {
+    width: '90%',
+    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+    borderRadius: 20,
+    padding: 24,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 10 },
+    shadowRadius: 20,
+    backdropFilter: 'blur(10px)', // web only, for RN use elevation/opacity
+  },
+  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    borderRadius: 10,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    marginBottom: 14,
+    color: '#333',
+    fontSize: 16,
+  },
+  primaryButton: {
+    backgroundColor: '#4B0082',
+    paddingVertical: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 12,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: '600',
+    fontSize: 16,
+  },
+  footerText: {
+    marginTop: 16,
+    color: '#333',
+    textAlign: 'center',
+  },
+});
